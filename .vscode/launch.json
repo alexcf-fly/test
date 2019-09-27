@@ -9,14 +9,14 @@
             "type": "cppdbg",   //配置类型
             "request": "launch",//请求配置类型，lanch（启动）或者attach（附加）
             "targetArchitecture": "x64",
-            "program": "${workspaceRoot}/${fileBasenameNoExtension}.exe",//将要进行调试的程序的路径
+            "program": "${fileDirname}/${fileBasenameNoExtension}.exe",//将要进行调试的程序的路径
             "args": [], //程序调试时传递的参数
             "stopAtEntry": false,
             "cwd": "${workspaceRoot}",//调试程序时的工作目录
             "environment": [],
             "externalConsole": true,//调试时是否显示控制台窗口，一般设置为true
             "MIMode": "gdb",
-            "miDebuggerPath": "C:/MinGW-64/mingw64/bin/sgdb.exe",//midebugger的路径
+            "miDebuggerPath": "C:/MinGW-64/mingw64/bin/gdb.exe",//midebugger的路径
             "preLaunchTask": "g++",
             "setupCommands": [
                 {
